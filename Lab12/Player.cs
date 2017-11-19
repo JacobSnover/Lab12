@@ -14,17 +14,18 @@ namespace Lab12
         int value = 0;
 
 
-        
+
         public Player(string playerName)
         {
             PlayerName = playerName;
         }
 
-        
+
 
         public string PlayerName { get => playerName; set => playerName = value; }
 
-       public abstract int GenerateRoshambo();
+        abstract public int GenerateRoshambo();
+
 
         public override string ToString()
         {

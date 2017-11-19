@@ -10,19 +10,20 @@ namespace Lab12
     {
 
         private static string PlayerName;
-        
+
 
         public ThirdPlayer(string thirdPlayer) : base(PlayerName)
         {
             PlayerName = thirdPlayer;
-            
+
         }
 
 
         public override int GenerateRoshambo()
         {
-            return 0;
+            return Validator.InputValidator();
         }
+
         public override string ToString()
         {
             return $"{PlayerName}";

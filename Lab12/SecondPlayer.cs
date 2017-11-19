@@ -6,22 +6,37 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    class SecondPlayer
+    class SecondPlayer : Player
     {
 
-        
+        private static string PlayerName;
 
-        public static string Aloy()
+
+
+        public SecondPlayer() : base(PlayerName)
         {
-            return "Aloy";
+            PlayerName = "Aloy";
         }
 
-        public static int AloysChoice(int x)
+      
+
+        //public static int AloysChoice(int x)
+        //{
+        //    Random r = new Random();
+        //    return r.Next(0, 2);
+        //}
+
+        public override int GenerateRoshambo()
         {
             Random r = new Random();
-            return r.Next(0, 2);
-
+            int x = r.Next(0, 2);
+            return x;
+       
         }
 
+        public override string ToString()
+        {
+            return $"{PlayerName}";
+        }
     }
 }

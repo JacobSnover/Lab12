@@ -13,9 +13,9 @@ namespace Lab12
 
         public static int InputValidator()
         {
-            
+
             string input = Console.ReadLine().ToLower();
-            
+
             while (true)
             {
                 if (input == "r")
@@ -36,7 +36,7 @@ namespace Lab12
                     input = Console.ReadLine();
                 }
 
-                
+
             }
         }
         public static int OpponentSelection()
@@ -44,7 +44,7 @@ namespace Lab12
 
             while (true)
             {
- 
+
                 string test = Console.ReadLine();
 
                 if (test == "1")
@@ -63,28 +63,6 @@ namespace Lab12
 
             }
 
-        }
-
-        public static string Result(int x)
-        {
-            
-            if (x == 0)
-            {
-                return "Rock";
-            }
-            else if (x == 1)
-            {
-                return "Paper";
-            }
-            else if (x == 2)
-            {
-                return "Scissors";
-            }
-            else
-            {
-                return null;
-            }
-            
         }
 
         public static string Continue()

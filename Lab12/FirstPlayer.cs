@@ -6,21 +6,25 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    public class FirstPlayer
+    class FirstPlayer : Player
     {
-       
+        private static string PlayerName;
 
-        public static string Shepard()
+
+        public FirstPlayer() : base(PlayerName)
         {
-            return "Shepard";
-        }
-        public static int ShepardsChoice()
-        {
-            int value = 0;
-            return value;
+            PlayerName = "Shepard";
         }
 
-        
+        public override int GenerateRoshambo()
+        {
+            return 0;
+        }
+
+        public override string ToString()
+        {
+            return $"{PlayerName}";
+        }
 
 
     }

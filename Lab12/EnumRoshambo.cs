@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    enum EnumRoshambo
+    public enum EnumRoshambo
     {
         Rock, Paper, Scissors
         
